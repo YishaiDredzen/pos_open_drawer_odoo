@@ -9,7 +9,7 @@
         When clicked, it opens the cash drawer without requiring the cashier to print a receipt.
         Useful for cash-only businesses or when a receipt is not needed.
     """,
-    'author': 'Custom',
+    'author': 'Yishai',
     'depends': ['point_of_sale'],
     'data': [],
     'assets': {
