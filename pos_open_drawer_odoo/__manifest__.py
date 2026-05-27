@@ -19,6 +19,9 @@
             'pos_open_register/static/src/js/open_register_button.js',
         ],
     },
+    'images': [
+        'static/description/btn-display.png',
+    ],
     'installable': True,
     'auto_install': False,
     'license': 'LGPL-3',
