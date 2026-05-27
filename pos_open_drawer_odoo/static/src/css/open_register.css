@@ -1,0 +1,26 @@
+/* pos_open_register – button styling */
+
+.open-register-btn {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    cursor: pointer;
+}
+
+.open-register-btn:hover {
+    background-color: #1b5e20;
+    transform: translateY(-1px);
+}
+
+.open-register-btn:active {
+    transform: translateY(0);
+}

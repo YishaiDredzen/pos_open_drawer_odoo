@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!--
+        Inherit the ProductScreen template and inject the "Open Register" button.
+        The button is only rendered when the order has no lines (nothing scanned).
+    -->
+    <t t-name="point_of_sale.ProductScreen" t-inherit="point_of_sale.ProductScreen" t-inherit-mode="extension">
+
+        <xpath expr="//div[hasclass('control-buttons')]" position="inside">
+            <t t-if="isOrderEmpty">
+                <button
+                    class="btn open-register-btn"
+                    t-on-click="openCashDrawer"
+                    title="Open cash drawer without processing a sale"
+                >
+                    <i class="fa fa-unlock-alt me-2"/>
+                    Open Register
+                </button>
+            </t>
+        </xpath>
+
+    </t>
+
+</templates>
